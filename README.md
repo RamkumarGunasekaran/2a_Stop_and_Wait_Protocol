@@ -1,4 +1,5 @@
 # 2a_Stop_and_Wait_Protocol
+
 ## AIM 
 To write a python program to perform stop and wait protocol
 ## ALGORITHM
@@ -27,7 +28,18 @@ while True:
      c.close()
      break
 ```
-
+## Server
+```
+import socket
+s=socket.socket()
+s.connect(('localhost',8000))
+while True:
+    print(s.recv(1024).decode())
+    s.send("Acknowledgement Recived".encode())
+```
 ## OUTPUT
+![Screenshot 2024-09-05 101533](https://github.com/user-attachments/assets/9c76eb5c-2955-4dcc-9b06-bf376c474b13)
+![Screenshot 2024-09-05 044554](https://github.com/user-attachments/assets/04782a27-368f-4529-9090-3eebfc4b8234)
+
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed.
