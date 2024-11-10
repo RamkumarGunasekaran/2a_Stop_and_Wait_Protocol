@@ -1,3 +1,5 @@
+## NAME: RAMKUMAR G
+## REG NO: 212223220084
 # 2a_Stop_and_Wait_Protocol
 
 ## AIM 
